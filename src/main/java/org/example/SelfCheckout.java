@@ -33,7 +33,8 @@ public class SelfCheckout
         System.out.printf("Subtotal: $%.2f\n", total);
         tax = tax*total;
         System.out.printf("Taxes: $%.2f\n", tax);
-        System.out.printf("Total: $%.2f\n", tax+total);
+        total += tax;
+        System.out.printf("Total: $%.2f\n", total);
 
     }
 }
